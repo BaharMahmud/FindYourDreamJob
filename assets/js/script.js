@@ -62,7 +62,7 @@ async function getJobListings(apiKey, location, keywords) {
 }
 
 // Usage example
-var apiKey = 'YOUR_API_KEY';
+var apiKey = '7d9de1620ebcf6cd476c7c843c768025';
 var location = '';
 var keywords = '';
 
