@@ -1,0 +1,31 @@
+.w3-container{
+    background-color: antiquewhite;
+    margin-bottom: 20px;
+}
+
+.w3-button w3-block w3-black{
+   background-color: white;
+}
+
+.fa {
+   
+        padding: 17px;
+        border-radius: 15px;
+        box-shadow: #84809c;
+}
+     
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-instagram {
+ background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25); }
+
+.fa-github{
+    background-color:#efedea;
+    border: 2px solid black;
+    color: #101010;
+ }
