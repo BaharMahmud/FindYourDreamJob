@@ -1,4 +1,14 @@
 function getArbeitNowApi() {
+
+  // Construct the URL with query parameters
+  var apiUrl = "https://www.arbeitnow.com/api/job-board-api";
+  var queryParams = {
+    where: location,
+    what: keywords
+    // Add more query parameters as needed
+  };
+  var queryString = new URLSearchParams(queryParams).toString();
+  var requestUrl = apiUrl + "?" + queryString;
     // fetch request for arbeitnow API
     var requestOptions = {
         method: 'GET',
@@ -73,3 +83,21 @@ getJobListings(apiKey, location, keywords)
   .catch(error => {
     console.error('Error:', error);
   });
+
+  // Loop over the job listings to generate a table
+for (var i = 0; i < jobListings.length; i++) {
+  // Creating elements: table row, table data, and anchor
+  var createTableRow = document.createElement('tr');
+  var tableData = document.createElement('td');
+  var link = document.createElement('a');
+
+  // Setting the text of the link and the href of the link
+  link.textContent = jobListings[i].html_url;
+  link.href = jobListings[i].html_url;
+
+  // Appending the link to the table data and then appending the table data to the table row
+  // The table row then gets appended to the table body
+  tableData.appendChild(link);
+  createTableRow.appendChild(tableData);
+  tableBody.appendChild(createTableRow);
+}
