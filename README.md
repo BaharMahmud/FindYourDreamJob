@@ -4,10 +4,10 @@ Kyle, Bahar, Anna, and Tyler worked together to create an application which, at 
 # Links
 Here is a link to the GitHub repository for the Find Your Dream Job project: https://github.com/BaharMahmud/FindYourDreamJob
 
-Here is a link to the GitHub Pages URL for the finished Find Your Dream Job application: (FILL IN LATER)
+Here is a link to the GitHub Pages URL for the finished Find Your Dream Job application: https://baharmahmud.github.io/FindYourDreamJob/
 
 # Disclosures
-In order to complete this project, I did have to utilize the API information from Adzuna and Arbeit, including generated API keys, pre-set code for the fetch method from Arbeit, and some help from the Xpert Learning Assistant to create the fetch method for Adzuna. 
+Two Api were used in the project. The first api Adzuna API was used to retrieve jobs based on job title/position and salary. Newsapi API was used to access news based on category of the job  titles. The purpose was to give users access to be able to get news about the job market etc. 
 
 # Screenshots
 INCLUDE SCREENSHOTS BELOW
