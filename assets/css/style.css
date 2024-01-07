@@ -67,3 +67,12 @@ h1{
     border: 1px solid #888;
     width: 80%;
   }
+
+.close{
+    cursor: pointer;
+    border: solid thin;
+font-weight: bold;
+}
+input{
+    color-scheme:antiquewhite ;
+}
