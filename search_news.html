@@ -23,7 +23,7 @@
       <h1 class="app-title">
        
         <!-- The `<i>` element is for icons. These classes come from the Font Awesome font icon library. -->
-        <i class="fab fa-github"></i> Search by salary
+        <i class="fab fa-github"></i> Search for News
       </h1>
    
     </header>
@@ -34,8 +34,8 @@
   
         <div class="card ">
           
-          <form id="salaries-form" class="card-body">
-            <label class="form-label flow-text black-text" for="title" >Salary</label>
+          <form id="news-form" class="card-body">
+            <label class="form-label flow-text black-text" for="title" >News</label>
             <input name="title" id="title" type="text" autofocus="true" class="form-input" />
             <button id="search" class="btn">Search</button>
           </form>
@@ -45,9 +45,9 @@
       </div>
   
       <div class="col-12 col-md-8">
-        <h4 class="subtitle">Results bu salaries : <span id="salaries-search-term"></span></h4  >
+        <h4 class="subtitle">News Results : <span id="news-search-term"></span></h4  >
         <!-- There needs to be an empty HTML element for us to write repository data to. -->
-        <div id="salaries-container" class="list-group"></div>
+        <div id="news-container" class="list-group"></div>
       </div>
     </main>
   
@@ -56,7 +56,7 @@
         <a class="footer black-text" href="index.html">Go Back</a>
     </footer>
       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="./assets/js/salaries.js"></script>
+    <script src="./assets/js/news.js"></script>
 
 </body>
 </html>

@@ -24,8 +24,7 @@ var getJobsLinks = function (job) {
   
  
     var query="&title_only="+job;
-    var apiUrl = "https://api.adzuna.com/v1/api/jobs/us/search/"+page+"?app_id=fe15ccd9&app_key=7d9de1620ebcf6cd476c7c843c768025"+query
- 
+    var apiUrl = "https://api.adzuna.com/v1/api/jobs/us/search/"+page+"?app_id=fe15ccd9&app_key=7d9de1620ebcf6cd476c7c843c768025"+query;
 
     fetch(apiUrl)
       .then(function (response) {
