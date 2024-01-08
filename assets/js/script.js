@@ -58,14 +58,19 @@ var getJobsLinks = function (job) {
   
     for (var i = 0; i < jobsResult.length; i++) {
       var jobByPosition = "Company: "+ jobsResult[i].company.display_name + "\nJob Title: "+ jobsResult[i].title +"\nJob Location: "+jobsResult[i].location.area+"\n" +" Salary: "+"$"+jobsResult[i].salary_max;
-  
+     var webUrl=  jobsResult[i].redirect_url;
       var jobEl = document.createElement('div');
       jobEl.classList = 'list-item flex-row justify-space-between align-center';
   
       var titleEl = document.createElement('span');
       titleEl.textContent = jobByPosition;
   
+      var urlForJobs=document.createElement('a');
+      urlForJobs.textContent='\n' + webUrl;
+        urlForJobs.setAttribute('href',webUrl);
+        urlForJobs.setAttribute("target","_self"); 
     jobEl.appendChild(titleEl);
+    jobEl.appendChild(urlForJobs);
     jobsContainerEl.appendChild(jobEl);
    
     

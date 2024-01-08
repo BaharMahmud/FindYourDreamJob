@@ -10,4 +10,7 @@ Here is a link to the GitHub Pages URL for the finished Find Your Dream Job appl
 Two Api were used in the project. The first api Adzuna API was used to retrieve jobs based on job title/position and salary. Newsapi API was used to access news based on category of the job  titles. The purpose was to give users access to be able to get news about the job market etc. 
 
 # Screenshots
-INCLUDE SCREENSHOTS BELOW
+![Alt text](image.png)
+
+Sup Pages connected to the nav bar based on options.
+![Alt text](image-1.png)

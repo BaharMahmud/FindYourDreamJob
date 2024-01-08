@@ -58,14 +58,21 @@ var getSalariesLinks = function (salary) {
   
     for (var i = 0; i < salariesResult.length; i++) {
       var salaryByPosition = "Company: "+ salariesResult[i].company.display_name + "\nJob Title: "+ salariesResult[i].title +"\nJob Location: "+salariesResult[i].location.area+"\n" +" Salary: "+"$"+salariesResult[i].salary_max;
-  
+      var webUrl=salariesResult[i].redirect_url;
+
       var salaryEl = document.createElement('div');
       salaryEl.classList = 'list-item flex-row justify-space-between align-center';
   
       var titleEl = document.createElement('span');
       titleEl.textContent = salaryByPosition;
   
+      var urlForSalaries=document.createElement('a');
+      urlForSalaries.textContent='\n' + webUrl;
+      urlForSalaries.setAttribute('href',webUrl);
+      urlForSalaries.setAttribute("target","_self");
+
     salaryEl.appendChild(titleEl);
+    salaryEl.appendChild(urlForSalaries);
     salariesContainerEl.appendChild(salaryEl);
    
     
