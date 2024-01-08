@@ -131,12 +131,14 @@ p {
 }
 
   .list-item span{
-    display: flex;
+   
     height: 100px;
   }
 
-
-
+  .list-item span a:hover{
+    cursor: pointer;
+  }
+  
 /* CARDS */
 .card {
   margin: 0 0 20px 0;
@@ -162,11 +164,12 @@ p {
   border: 2px solid var(--light-dark);
   border-radius: var(--border-radius);
 }
-
-a{
+.footer{
   position: relative;
   left: 1400px;
+
 }
+
 
 
 

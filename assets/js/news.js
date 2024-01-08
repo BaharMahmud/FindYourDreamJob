@@ -31,7 +31,7 @@ var getNewsLinks = function (news) {
         if (response.ok) {
           console.log(response);
           response.json().then(function (data) {
-            console.log(data.articles   );
+            console.log(data.articles);
            
             displayNewsResults(data.articles,news);
           });
@@ -57,15 +57,22 @@ var getNewsLinks = function (news) {
     newsSearchTerm.textContent = searchTerm;
   
     for (var i = 0; i < newsResult.length; i++) {
-      var newsByPosition = "Title: "+ newsResult[i].title + "\n Url: " + newsResult[i].url;
-  
+      var newsByPosition = "Title: "+ newsResult[i].title ;
+      var webUrl=newsResult[i].url;
       var newsEl = document.createElement('div');
       newsEl.classList = 'list-item block justify-space-between align-center';
   
       var titleEl = document.createElement('span');
       titleEl.textContent = newsByPosition;
   
-    newsEl.appendChild(titleEl);
+var urlForNews=document.createElement('a');
+urlForNews.textContent='\n' + webUrl;
+        urlForNews.setAttribute('href',webUrl);
+        urlForNews.setAttribute("target","_self"); 
+        newsEl.appendChild(titleEl);
+    newsEl.appendChild(urlForNews);
+   
+    
     newsContainerEl.appendChild(newsEl);
    
     
