@@ -66,12 +66,12 @@ var getNewsLinks = function (news) {
       var titleEl = document.createElement('span');
       titleEl.textContent = newsByPosition;
   
-var urlForNews=document.createElement('a');
-urlForNews.textContent='\n' + webUrl;
-        urlForNews.setAttribute('href',webUrl);
-        urlForNews.setAttribute("target","_self"); 
-        newsEl.appendChild(titleEl);
-    newsEl.appendChild(urlForNews);
+       var urlForNews=document.createElement('a');
+       urlForNews.textContent='\n' + "Go to website";
+       urlForNews.setAttribute('href',webUrl);
+       urlForNews.setAttribute("target","_self"); 
+       newsEl.appendChild(titleEl);
+       newsEl.appendChild(urlForNews);
    
     
     newsContainerEl.appendChild(newsEl);

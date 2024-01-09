@@ -67,7 +67,7 @@ var getSalariesLinks = function (salary) {
       titleEl.textContent = salaryByPosition;
   
       var urlForSalaries=document.createElement('a');
-      urlForSalaries.textContent='\n' + webUrl;
+      urlForSalaries.textContent='\n' + "Go to website";
       urlForSalaries.setAttribute('href',webUrl);
       urlForSalaries.setAttribute("target","_self");
 
