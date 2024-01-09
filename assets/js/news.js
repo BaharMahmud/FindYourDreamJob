@@ -24,16 +24,17 @@ var getNewsLinks = function (news) {
   
  
    
-    var apiUrl = "https://newsapi.org/v2/top-headlines?country=us&page="+page+"&category="+news+"&apikey=9dc639adbe46431d8f703739a2b32523";
+    
+    var apiUrl = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+news+"&page="+page+"&api-key=Mx7W0r7TTF6zZe6AsPiDbv2vbta34MmA";
 
     fetch(apiUrl)
       .then(function (response) {
         if (response.ok) {
           console.log(response);
           response.json().then(function (data) {
-            console.log(data.articles);
+            console.log(data.response.docs);
            
-            displayNewsResults(data.articles,news);
+            displayNewsResults(data.response.docs,news);
           });
         } else {
           alert('Error: ' + response.statusText);
@@ -57,8 +58,8 @@ var getNewsLinks = function (news) {
     newsSearchTerm.textContent = searchTerm;
   
     for (var i = 0; i < newsResult.length; i++) {
-      var newsByPosition = "Title: "+ newsResult[i].title ;
-      var webUrl=newsResult[i].url;
+      var newsByPosition = "Title: "+ newsResult[i].snippet ;
+      var webUrl=newsResult[i].web_url;
       var newsEl = document.createElement('div');
       newsEl.classList = 'list-item block justify-space-between align-center';
   
