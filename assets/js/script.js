@@ -66,7 +66,7 @@ var getJobsLinks = function (job) {
       titleEl.textContent = jobByPosition;
   
       var urlForJobs=document.createElement('a');
-      urlForJobs.textContent='\n' + webUrl;
+      urlForJobs.textContent='\n' + "Go to website";
         urlForJobs.setAttribute('href',webUrl);
         urlForJobs.setAttribute("target","_self"); 
     jobEl.appendChild(titleEl);
